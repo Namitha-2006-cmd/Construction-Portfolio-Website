@@ -1,0 +1,148 @@
+.footer {
+  background-color: #EAB308;
+  color: black;
+  padding: 60px 80px 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+  gap: 40px;
+}
+
+
+/* About Section */
+.footer-about h2 {
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size:x-large;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  font-weight: bold;
+  color: whitesmoke;
+  border-color:whitesmoke;
+}
+
+/* Links */
+.footer-links h3,
+.footer-cta h3 {
+  color: whitesmoke;
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+
+.footer-links a {
+  display: block;
+  color: black;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: whitesmoke;
+}
+
+/* CTA */
+.footer-cta button {
+  margin-right:20px;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer-cta button:hover {
+  background-color: #EAB308;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  font-weight: bold;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer-bottom span {
+  color: black;
+}
+
+.highlight {
+  color: whitesmoke;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+
+.footer-contact .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.contact-icon { /* change to your theme color */
+  font-size: 16px;
+}
